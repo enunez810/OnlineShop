@@ -3,16 +3,19 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Navbar from './components/Navbar'
+import ItemListContainer from './components/ItemListContainer'
 
 function App() {
   const [count, setCount] = useState(0)
+  const mensajeBienvenida = () => `Bienvenido a Funko Store`
 
   return (
     <>
       <div>
         <Navbar />
       </div>
-      <h1>Vite + React + OnLineShop + Edu</h1>
+      <ItemListContainer  greeting = { mensajeBienvenida()}         />
+      <h4>Vite + React + OnLineShop + Edu + Luchy</h4>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
