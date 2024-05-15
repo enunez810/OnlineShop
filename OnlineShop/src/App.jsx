@@ -7,14 +7,14 @@ import ItemListContainer from './components/ItemListContainer'
 
 function App() {
   const [count, setCount] = useState(0)
-  const mensajeBienvenida = () => `Bienvenido a Funko Store`
+  const usuarioConectado = () => `Eduardo`
 
   return (
     <>
       <div>
         <Navbar />
       </div>
-      <ItemListContainer  greeting = { mensajeBienvenida()}         />
+      <ItemListContainer  greeting = { usuarioConectado()}         />
       <h4>Vite + React + OnLineShop + Edu + Luchy</h4>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>

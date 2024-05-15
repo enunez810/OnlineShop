@@ -111,4 +111,12 @@
   
 .cats {
    color: orange;  
+   text-decoration: inherit;
+   transition: color 0.3s ease;
+
 }
+
+.cats:hover {
+    color: #0000FF;  
+ }
+ 
