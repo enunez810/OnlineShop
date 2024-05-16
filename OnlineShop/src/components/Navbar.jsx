@@ -10,7 +10,7 @@ const Navbar = () => {
     return (
         <nav className="navbar-full">
             <div className="navbar-logo">
-                <img src="../src/img/logotienda.png" className="img-logo" />  { appName() } 
+                <img src="../src/img/fun_kratos.png" className="img-logo" /> { appName() } 
             </div>
             <div className="navbar-busc">
                 <input type="text" name="main_search" id="main_search" className="search-input"  />

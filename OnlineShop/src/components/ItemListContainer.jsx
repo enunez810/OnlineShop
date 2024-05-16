@@ -1,9 +1,13 @@
+import  info from "../assets/info.svg"
+
 const ItemListContainer = ({greeting}) => {
 
-
-
     return (
-        <h1>Hola { greeting } Bienvenido a Funko Store !!!  </h1>
+        <>
+            <div class="alert alert-primary" role="alert">
+                <h5>Hola { greeting } Bienvenido a Funko Store !!!  </h5>
+            </div>
+        </>
     )
 }
 
