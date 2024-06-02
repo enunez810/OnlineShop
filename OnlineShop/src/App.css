@@ -1,7 +1,5 @@
 .w-message {
     display: flex;
-    text-align: center;
-    justify-content: center;
     align-items: center;
     margin-top: 35px;
     width: 100%;
@@ -10,4 +8,13 @@
 .icons-size {
     height: 30px;
     width:  30px;
+}
+
+.home-bannner {
+    display: flex;
+    align-items: center;
+    margin-top: 35px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
 }

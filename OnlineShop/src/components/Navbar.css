@@ -26,6 +26,12 @@
     font-weight: bold;
 }
 
+.navbar-logo a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+
 .img-logo {
     width: 50px;
     height: 50px;
@@ -37,7 +43,7 @@
 /* SECCION DE LA BUSQUEDA PRINCIPAL DE LA TIENDA */
 .navbar-busc {
     /* border: 1px solid #0F0; */ 
-    width:  45%;
+    width:  35%;
     margin: 0px;
     padding-left: 3px;
     text-align: right;
@@ -82,7 +88,7 @@
 /* SECCION DE LAS CATEGORIAS Y EL CARRITO */
 .navbar-menu {
     /* border: 1px solid #00F; */
-    width: 30%;
+    width: 40%;
     margin: 0px;
     align-items: center;
     min-height: 60px;

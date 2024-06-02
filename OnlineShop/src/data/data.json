@@ -1,0 +1,496 @@
+[
+    {
+    "id": 1,
+    "title": "Avatar - Aang Flotante",
+    "price": 10512.95,
+    "description": "Funko Pop de Avatar, La leyenda de Aang",
+    "category": "Anime",
+    "image": "images/funkos/avatar.webp",
+    "rating": {
+		"rate": 3.9,
+		"count": 120
+		}
+    },
+    {
+    "id": 2,
+    "title": "Darth Vader",
+    "price": 12200.31,
+    "description": "Funko Pop de Star Wars - Darth Vader",
+    "category": "Peliculas",
+    "image": "images/funkos/darthvader.webp",
+    "rating": {
+		"rate": 3.9,
+		"count": 120
+		}
+    },
+    {
+    "id": 3,
+    "title": "Queen - Freddy Mercury",
+    "price": 15500.99,
+    "description": "El cantante de Queen Freddy Mercury",
+    "category": "Musica",
+    "image": "images/funkos/freddy.webp",
+    "rating": {
+		"rate": 3.9,
+		"count": 120
+		}
+    },
+    {
+    "id": 4,
+    "title": "Groot",
+    "price": 11200.99,
+    "description": "Guardianes de la Galaxia - Groot",
+    "category": "Peliculas",
+    "image": "images/funkos/groot.webp",
+    "rating": {
+		"rate": 3.9,
+		"count": 120
+		} 
+    },
+    {
+    "id": 5,
+    "title": "Joker",
+    "price": 10120.99,
+    "description": "Batman Joker - version Jack Nicholson",
+    "category": "Peliculas",
+    "image": "images/funkos/joker.webp",
+    "rating": {
+		"rate": 3.9,
+		"count": 120
+		}
+    },
+    {
+    "id": 6,
+    "title": "Kanao Tsuyuri",
+    "price": 9820.99,
+    "description": "Demon Slayer Kanao Tsuyuri",
+    "category": "Anime",
+    "image": "images/funkos/kanao.webp",
+    "rating": {
+		"rate": 3.9,
+		"count": 120
+		}
+    },
+    {
+    "id": 7,
+    "title": "Mitsuri Kanroji",
+    "price": 11820.99,
+    "description": "Demon Slayer Mitsuri Kanroji",
+    "category": "Anime",
+    "image": "images/funkos/mitsury.webp",
+    "rating": {
+		"rate": 3.9,
+		"count": 120
+		}
+    },
+    {
+    "id": 8,
+    "title": "Nezuko Kamado",
+    "price": 14870.99,
+    "description": "Demon Slayer Nezuko Kamado",
+    "category": "Anime",
+    "image": "images/funkos/nezuko.webp",
+    "rating": {
+		"rate": 3.9,
+		"count": 120
+		}
+    }, 
+    {
+      "id": 9,
+      "title": "Rui",
+      "price": 9870.99,
+      "description": "Demon Slayer Rui",
+      "category": "Anime",
+      "image": "images/funkos/rui.webp",
+      "rating": {
+      "rate": 3.9,
+      "count": 120
+      }
+    }, 
+    {
+      "id": 10,
+      "title": "Stich",
+      "price": 10510.00,
+      "description": "Stich - Lilo & Stich",
+      "category": "Peliculas",
+      "image": "images/funkos/stich.jpg",
+      "rating": {
+      "rate": 3.9,
+      "count": 120
+      }
+    }, 
+    {
+      "id": 11,
+      "title": "Tanjiro",
+      "price": 10510.00,
+      "description": "Demon Slayer - Tanjiro Kamado",
+      "category": "Anime",
+      "image": "images/funkos/Tanjiro.webp",
+      "rating": {
+      "rate": 3.9,
+      "count": 120
+      }
+    },
+    {
+      "id": 12,
+      "title": "Viserys Targaryen",
+      "price": 12740.00,
+      "description": "House of Dragon",
+      "category": "Series",
+      "image": "images/funkos/ViserysTargaryen.webp",
+      "rating": {
+      "rate": 3.9,
+      "count": 120
+      }
+    },
+    {
+      "id": 13,
+      "title": "Amy Winehouse",
+      "price": 18740.00,
+      "description": "Great Music Singer",
+      "category": "Musica",
+      "image": "images/funkos/amywinehouse.jpg",
+      "rating": {
+      "rate": 3.9,
+      "count": 120
+      }
+    },
+    {
+      "id": 14,
+      "title": "Batman",
+      "price": 18930.00,
+      "description": "The Dark Knight",
+      "category": "Peliculas",
+      "image": "images/funkos/batman.jpg",
+      "rating": {
+      "rate": 3.9,
+      "count": 120
+      }
+    },
+    {
+      "id": 15,
+      "title": "Assassins Creed - Callum",
+      "price": 11930.00,
+      "description": "The Assassins Creed Collections",
+      "category": "Videojuegos",
+      "image": "images/funkos/callum-ac.jpg",
+      "rating": {
+      "rate": 3.9,
+      "count": 120
+      }
+    },
+    {
+      "id": 16,
+      "title": "Minecraft - Creeper",
+      "price": 7990.00,
+      "description": "The Minecraft Creeper ",
+      "category": "Videojuegos",
+      "image": "images/funkos/creeper.jpg",
+      "rating": {
+      "rate": 3.9,
+      "count": 120
+      }
+    },
+    {
+      "id": 17,
+      "title": "Metallica - James Hetfield",
+      "price": 12990.00,
+      "description": "James Hetfield ",
+      "category": "Musica",
+      "image": "images/funkos/jameshetfield.jpg",
+      "rating": {
+      "rate": 3.9,
+      "count": 120
+      }
+    },
+    {
+      "id": 18,
+      "title": "Games of Thrones - Daenerys",
+      "price": 11390.00,
+      "description": "The mother of Dragons ",
+      "category": "Series",
+      "image": "images/funkos/daenerys.jpg",
+      "rating": {
+      "rate": 3.9,
+      "count": 120
+      }
+    },
+    {
+      "id": 19,
+      "title": "Harry Potter",
+      "price": 14390.00,
+      "description": "Harry Potter ",
+      "category": "Peliculas",
+      "image": "images/funkos/harrypotter.jpg",
+      "rating": {
+      "rate": 3.9,
+      "count": 120
+      }
+    },
+    {
+      "id": 20,
+      "title": "Hermoine",
+      "price": 13390.00,
+      "description": "Harry Potter - Hermoine",
+      "category": "Peliculas",
+      "image": "images/funkos/hermoine.jpg",
+      "rating": {
+      "rate": 3.9,
+      "count": 120
+      }
+    },
+    {
+      "id": 21,
+      "title": "Jon Snow",
+      "price": 13390.00,
+      "description": "Games of Thrones - Jon Snow",
+      "category": "Series",
+      "image": "images/funkos/jonsnow.jpg",
+      "rating": {
+      "rate": 3.9,
+      "count": 120
+      }
+    },
+    {
+      "id": 22,
+      "title": "God of War - Kratos",
+      "price": 17890.00,
+      "description": "God of War - Young Kratos",
+      "category": "Videojuegos",
+      "image": "images/funkos/kratos.jpg",
+      "rating": {
+      "rate": 3.9,
+      "count": 120
+      }
+    },
+    {
+      "id": 23,
+      "title": "Kuromi",
+      "price": 21890.00,
+      "description": "Sanrio - Kuromi",
+      "category": "Series",
+      "image": "images/funkos/kuromi.jpg",
+      "rating": {
+      "rate": 3.9,
+      "count": 120
+      }
+    },
+    {
+      "id": 24,
+      "title": "Mad Eye Moody",
+      "price": 12350.00,
+      "description": "Harry Potter - Mad Eye Moody",
+      "category": "Peliculas",
+      "image": "images/funkos/mad_eye_moody.jpg",
+      "rating": {
+      "rate": 3.9,
+      "count": 120
+      }
+    },
+    {
+      "id": 25,
+      "title": "Mario Bros",
+      "price": 16350.00,
+      "description": "Mario Bros",
+      "category": "Videojuegos",
+      "image": "images/funkos/mario.jpg",
+      "rating": {
+      "rate": 3.9,
+      "count": 120
+      }
+    },
+    {
+      "id": 26,
+      "title": "MasterChief",
+      "price": 11850.00,
+      "description": "Halo - Masterchief",
+      "category": "Videojuegos",
+      "image": "images/funkos/masterchief.jpg",
+      "rating": {
+      "rate": 3.9,
+      "count": 120
+      }
+    },
+    {
+      "id": 27,
+      "title": "Megaman",
+      "price": 10150.00,
+      "description": "Capcom - Megaman",
+      "category": "Videojuegos",
+      "image": "images/funkos/megaman.jpg",
+      "rating": {
+      "rate": 3.9,
+      "count": 120
+      }
+    },
+    {
+      "id": 28,
+      "title": "Naruto",
+      "price": 12150.00,
+      "description": "Naruto Shinpudden",
+      "category": "Anime",
+      "image": "images/funkos/naruto.jpg",
+      "rating": {
+      "rate": 3.9,
+      "count": 120
+      }
+    },
+    {
+      "id": 29,
+      "title": "Sana",
+      "price": 19850.00,
+      "description": "Twice - Sana",
+      "category": "Musica",
+      "image": "images/funkos/sana.jpg",
+      "rating": {
+      "rate": 3.9,
+      "count": 120
+      }
+    },
+    {
+      "id": 30,
+      "title": "Saul Goodman",
+      "price": 11450.00,
+      "description": "Breaking Bad - Saul Goodman",
+      "category": "Series",
+      "image": "images/funkos/saul.jpg",
+      "rating": {
+      "rate": 3.9,
+      "count": 120
+      }
+    },
+    {
+      "id": 31,
+      "title": "Shakira",
+      "price": 9450.00,
+      "description": "Shakira",
+      "category": "Musica",
+      "image": "images/funkos/shakira.jpg",
+      "rating": {
+      "rate": 3.9,
+      "count": 120
+      }
+    },
+    {
+      "id": 32,
+      "title": "Sonic",
+      "price": 12450.00,
+      "description": "Sonic the hedgehog",
+      "category": "Videojuegos",
+      "image": "images/funkos/sonic.jpg",
+      "rating": {
+      "rate": 3.9,
+      "count": 120
+      }
+    },
+    {
+      "id": 33,
+      "title": "Michonne",
+      "price": 11350.00,
+      "description": "The Walking dead - Michonne",
+      "category": "Series",
+      "image": "images/funkos/twd_michonne.jpg",
+      "rating": {
+      "rate": 3.9,
+      "count": 120
+      }
+    },
+    {
+      "id": 34,
+      "title": "Negan",
+      "price": 11250.00,
+      "description": "The Walking dead - Negan",
+      "category": "Series",
+      "image": "images/funkos/twd_negan.jpg",
+      "rating": {
+      "rate": 3.9,
+      "count": 120
+      }
+    },
+    {
+      "id": 35,
+      "title": "Chaeyoung",
+      "price": 17250.00,
+      "description": "Twice - Chaeyoung",
+      "category": "Musica",
+      "image": "images/funkos/twice_chaeyoung.jpg",
+      "rating": {
+      "rate": 3.9,
+      "count": 120
+      }
+    },
+    {
+      "id": 36,
+      "title": "Hira",
+      "price": 17350.00,
+      "description": "Twice - Hira",
+      "category": "Musica",
+      "image": "images/funkos/twice_hirai.jpg",
+      "rating": {
+      "rate": 3.9,
+      "count": 120
+      }
+    },
+    {
+      "id": 37,
+      "title": "Sana",
+      "price": 17450.00,
+      "description": "Twice - Sana",
+      "category": "Musica",
+      "image": "images/funkos/twice_sana.jpg",
+      "rating": {
+      "rate": 3.9,
+      "count": 120
+      }
+    },
+    {
+      "id": 38,
+      "title": "Walter White",
+      "price": 19450.00,
+      "description": "Breaking Bad - Walter White",
+      "category": "Series",
+      "image": "images/funkos/walter_white.jpg",
+      "rating": {
+      "rate": 3.9,
+      "count": 120
+      }
+    },
+    {
+      "id": 39,
+      "title": "Zenitzu",
+      "price": 12450.00,
+      "description": "Demon Slayer - Zenitzu",
+      "category": "Anime",
+      "image": "images/funkos/zenitzu.webp",
+      "rating": {
+      "rate": 3.9,
+      "count": 120
+      }
+    },
+    {
+      "id": 40,
+      "title": "Zombie",
+      "price": 9450.00,
+      "description": "The Walking Dead - Zombie",
+      "category": "Series",
+      "image": "images/funkos/zombie.jpg",
+      "rating": {
+      "rate": 3.9,
+      "count": 120
+      }
+    },
+    {
+      "id": 41,
+      "title": "CupHead",
+      "price": 9850.00,
+      "description": "CupHead",
+      "category": "Videojuegos",
+      "image": "images/funkos/cuphead.jpg",
+      "rating": {
+      "rate": 3.9,
+      "count": 120
+      }
+    }
+	
+
+]
