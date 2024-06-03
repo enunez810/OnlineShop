@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route  } from 'react-router-dom'
 import Home from './components/Home'
 import Catalogo from './components/Catalogo'
 import Navbar from './components/Navbar'
+import ItemDetailContainer from './components/ItemDetailContainer'
 
 function App() {
   return (
@@ -12,9 +13,10 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Routes>
-        <Route path="/" element={ <Home /> } />
-        <Route path="/catalogo" element={ <Catalogo /> } />
-        <Route path="/category/:categoryId" element={ <Catalogo /> } />
+            <Route path="/" element={ <Catalogo /> } />
+            <Route path="/catalogo" element={ <Catalogo /> } />
+            <Route path="/category/:categoryId" element={ <Catalogo /> } />
+            <Route path="/item/:funkoid/:funkoname" element={ <ItemDetailContainer /> } />
         </Routes>
       </BrowserRouter>
     </>
