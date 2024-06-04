@@ -10,7 +10,7 @@ const Fcards = ({id, producto, precio, imagen, categoria}) => {
                 </span>
                 <Link to={`/item/${id}/${producto}`}>
                     <div>
-                        <img src={`../../src/assets/`+imagen}    alt={producto} className="img-producto" />  
+                        <img src={`../../src/assets/${imagen}`}   alt={producto} className="img-producto" />  
                     </div>
                     <h3 className="myTitle f-size-18">
                         {producto}

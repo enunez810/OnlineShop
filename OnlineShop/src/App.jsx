@@ -20,6 +20,10 @@ function App() {
         </Routes>
       </BrowserRouter>
     </>
+    // NOTA PRE-ENTREGA 2: 
+    // Inicialmente en el "/" tendre que renderice el componente <Home /> que tendra algun Slide y Seleccion de Categorias mas copadas
+    //    Pero para la Preentrega 2 renderizara <Catalogo /> este internamente tendra el  <ItemListContainer />, 
+    //    pero en un Futuro le voy a poner otras cosas al Catalogo para mostrar ademas de los Solo los Productos.  
   )
 }
 

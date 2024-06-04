@@ -4,6 +4,8 @@ import Fcards from "./Fcards"
 import { useState, useEffect } from "react";
 import { useParams  } from "react-router-dom"; 
 
+import imgLoading from "../assets/images/loading.gif"
+
 const ItemListContainer = ({greeting}) => {
 
     const [info, setInfo] = useState(null);
@@ -55,7 +57,7 @@ const ItemListContainer = ({greeting}) => {
                     (cargando) ? 
                 
                     <div  className="al-center"> 
-                        <img src="/src/assets/images/loading.gif"  className="img-loading"/>
+                        <img src={ imgLoading }  className="img-loading"/>
                         <div className="orange-message-box"> 
                             <p>Cargando Funkos</p>
                         </div>

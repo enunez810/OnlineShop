@@ -1,6 +1,7 @@
 import "./Navbar.css"
 import  searchIcon from "../assets/find.svg"
 import  profileIcon from "../assets/user-profile.svg"
+import  logoTienda from "../img/fun_kratos.png"
 import  CartWidget from "./CartWidget"
 import { Link } from 'react-router-dom'
 
@@ -11,7 +12,7 @@ const Navbar = () => {
         <nav className="navbar-full">
             <div className="navbar-logo">
                 <Link to={`/`}>
-                    <img src="../src/img/fun_kratos.png" className="img-logo" /> { appName() } 
+                    <img src={ logoTienda } className="img-logo" /> { appName() } 
                 </Link>
             </div>
             <div className="navbar-busc">

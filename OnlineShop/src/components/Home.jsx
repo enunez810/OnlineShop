@@ -2,6 +2,8 @@ import { useState } from 'react'
 import Navbar from './/Navbar'
 import ItemListContainer from './/ItemListContainer'
 import { Link } from 'react-router-dom'
+import  imgCatalogo from "../assets/images/catalogo.png"
+
 
 const Home = () => {
     const [count, setCount] = useState(0)
@@ -11,7 +13,7 @@ const Home = () => {
         <>
             <div className='home-bannner'>
                 <Link to={`/catalogo`}>
-                    <img src="../src/assets/images/catalogo.png"></img>
+                    <img src={imgCatalogo}></img>
                 </Link>
             </div>
         </>
