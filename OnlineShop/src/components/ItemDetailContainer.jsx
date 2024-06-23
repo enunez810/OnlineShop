@@ -1,9 +1,12 @@
 import { useParams, Link  } from "react-router-dom";
-import data from "../data/data.json";
 import { useState, useEffect } from "react";
+import   ContainerModo    from "../components/ContainerModo";
+
 import "./ItemDetailContainer.css"
 import imgTarjetas from "../assets/images/tarjetas.png"
 import  cartIcon from "../assets/cart.svg"
+
+import data from "../data/data.json";
 
 const ItemDetailContainer = () => {
     const { funkoid, funkoname } = useParams();
@@ -29,7 +32,7 @@ const ItemDetailContainer = () => {
     }
 
     return (
-        <>
+        <ContainerModo>
 
             <div className="item-full">
                 {funko ? 
@@ -68,7 +71,7 @@ const ItemDetailContainer = () => {
                     </button>
                 </Link>
             </div>
-        </>
+        </ContainerModo>
     );
 }
 

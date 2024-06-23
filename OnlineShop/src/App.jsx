@@ -6,18 +6,21 @@ import Home from './components/Home'
 import Catalogo from './components/Catalogo'
 import Navbar from './components/Navbar'
 import ItemDetailContainer from './components/ItemDetailContainer'
+import { ThemeProvider } from './contexts/ThemeContext'
 
 function App() {
   return (
     <>
       <BrowserRouter>
-        <Navbar />
-        <Routes>
-            <Route path="/" element={ <Catalogo /> } />
-            <Route path="/catalogo" element={ <Catalogo /> } />
-            <Route path="/category/:categoryId" element={ <Catalogo /> } />
-            <Route path="/item/:funkoid/:funkoname" element={ <ItemDetailContainer /> } />
-        </Routes>
+        <ThemeProvider>
+          <Navbar />
+          <Routes>
+              <Route path="/" element={ <Catalogo /> } />
+              <Route path="/catalogo" element={ <Catalogo /> } />
+              <Route path="/category/:categoryId" element={ <Catalogo /> } />
+              <Route path="/item/:funkoid/:funkoname" element={ <ItemDetailContainer /> } />
+          </Routes>
+        </ThemeProvider>
       </BrowserRouter>
     </>
     // NOTA PRE-ENTREGA 2: 

@@ -59,3 +59,13 @@
     background-color: #ED8D14;
     color:#FFF;
 }
+
+.modo-oscuro {
+    background-color: #031525;
+    color: #D3E3FD;
+}
+
+.modo-claro {
+    background-color: #FFF;
+    color: black;
+}

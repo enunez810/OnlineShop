@@ -1,14 +1,41 @@
 import "./Navbar.css"
+
 import  searchIcon from "../assets/find.svg"
 import  profileIcon from "../assets/user-profile.svg"
 import  logoTienda from "../img/fun_kratos.png"
+import  sunIcon from "../assets/images/sun.svg"
+import  moonIcon from "../assets/images/moon.svg"
+
 import  CartWidget from "./CartWidget"
 import { Link } from 'react-router-dom'
+import { ThemeContext } from "../contexts/ThemeContext"
+import { useContext } from "react"
+import ContainerModo from "./ContainerModo"; 
+
 
 const Navbar = () => {
     const appName = () => `Funko Store`
 
+    const { setModo, modo } = useContext(ThemeContext);
+    const { setIconmodo, iconmodo } = useContext(ThemeContext);
+
+    const handlerClickModos = () => {
+        if (modo === "claro") 
+        {
+            setModo("oscuro");
+            setIconmodo(moonIcon);
+        }
+        else 
+        {
+            setModo("claro");
+            setIconmodo(sunIcon);
+        }
+    }
+
+    
+
     return (
+        <ContainerModo>
         <nav className="navbar-full">
             <div className="navbar-logo">
                 <Link to={`/`}>
@@ -46,8 +73,13 @@ const Navbar = () => {
                     <p>Perfil</p>
                 </div>
                 <CartWidget />
+                <div id="div_modo" className="divs-menu" onClick={handlerClickModos}> 
+                    <img src={iconmodo} className="search-icon" />
+                    <p>{ modo }</p>
+                </div>
             </div>
         </nav>
+        </ContainerModo>
     )
 }
 

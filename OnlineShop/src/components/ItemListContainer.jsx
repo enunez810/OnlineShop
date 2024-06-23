@@ -1,8 +1,12 @@
 import data from "../data/data.json"
-import Fcards from "./Fcards"
+import { db } from "../configs/firebaseConfig";
+import { getDocs, collection } from "firebase/firestore"
+
 
 import { useState, useEffect } from "react";
 import { useParams  } from "react-router-dom"; 
+import ContainerModo   from "../components/ContainerModo";
+import Fcards from "./Fcards"
 
 import imgLoading from "../assets/images/loading.gif"
 
@@ -13,10 +17,10 @@ const ItemListContainer = ({greeting}) => {
     const [msgerror, setMsgError] = useState(false);     
 
     const { categoryId } = useParams(); 
-    //const [ filtro, setFiltro] = useState("");     
+    //const [ fdiriltro, setFiltro] = useState("");     
 
+    /*
     useEffect(() => {
-        //setFiltro(categoryId);
         const obtenerData = new Promise((resolve, reject) => {
             setTimeout(() =>  {
                 resolve(data)
@@ -28,16 +32,12 @@ const ItemListContainer = ({greeting}) => {
             let infoFiltrada = [];
 
             if (categoryId)  {
-                //infoFiltrada = respuesta;
                 infoFiltrada = respuesta.filter(product => product.category.toLowerCase() === categoryId.toLowerCase());
             } else {
                 infoFiltrada = respuesta;
             }
             setInfo(infoFiltrada)
             setCargando(false)
-    
-            console.log(categoryId);
-            console.log(infoFiltrada);
         })
         .catch((error) => {
             setCargando(false)
@@ -45,10 +45,40 @@ const ItemListContainer = ({greeting}) => {
         })
 
     },  [categoryId])
+    */
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                //el segundo argumento de la función collection es el nombre de nuestra colección
+                const querySnapshot = await getDocs(collection(db, "funkos_productos"))
+                
+                // para obtener los documentos (que son los datos que contiene la colección) debo mapearlos de la siguiente manera
+                const obtenerDocumentos = querySnapshot.docs.map(element => ({ id: element.id, ...element.data()}))
+
+                let infoFiltrada = [];
+
+                if (categoryId)  {
+                    infoFiltrada = obtenerDocumentos.filter(product => product.category.toLowerCase() === categoryId.toLowerCase());
+                } else {
+                    infoFiltrada = obtenerDocumentos;
+                }
+                setInfo(infoFiltrada)
+                setCargando(false)
+    
+                //console.log(obtenerDocumentos)
+            } catch(error) {
+                setCargando(false)
+                setMsgError(error)
+            }
+        }
+
+        fetchData()
+    }, [categoryId])
+
 
 
     return (
-        <>
+        <ContainerModo>
             <section className="w-100">
                 <div className="orange-message-box">
                     <h2>Funkos a la Venta</h2>
@@ -56,7 +86,7 @@ const ItemListContainer = ({greeting}) => {
                 {
                     (cargando) ? 
                 
-                    <div  className="al-center"> 
+                    <div  className="row al-center"> 
                         <img src={ imgLoading }  className="img-loading"/>
                         <div className="orange-message-box"> 
                             <p>Cargando Funkos</p>
@@ -89,7 +119,7 @@ const ItemListContainer = ({greeting}) => {
                             </div>
                 }
             </section>
-        </>
+        </ContainerModo>
     )
 }
 
