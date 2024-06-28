@@ -1,7 +1,6 @@
-import data from "../data/data.json"
+//import data from "../data/data.json"
 import { db } from "../configs/firebaseConfig";
 import { getDocs, collection } from "firebase/firestore"
-
 
 import { useState, useEffect } from "react";
 import { useParams  } from "react-router-dom"; 
@@ -17,35 +16,7 @@ const ItemListContainer = ({greeting}) => {
     const [msgerror, setMsgError] = useState(false);     
 
     const { categoryId } = useParams(); 
-    //const [ fdiriltro, setFiltro] = useState("");     
 
-    /*
-    useEffect(() => {
-        const obtenerData = new Promise((resolve, reject) => {
-            setTimeout(() =>  {
-                resolve(data)
-                //reject("Error Recuperando los Productos!!!")
-            }, 500);
-        })
-        .then((respuesta) => {
-    
-            let infoFiltrada = [];
-
-            if (categoryId)  {
-                infoFiltrada = respuesta.filter(product => product.category.toLowerCase() === categoryId.toLowerCase());
-            } else {
-                infoFiltrada = respuesta;
-            }
-            setInfo(infoFiltrada)
-            setCargando(false)
-        })
-        .catch((error) => {
-            setCargando(false)
-            setMsgError(error)
-        })
-
-    },  [categoryId])
-    */
     useEffect(() => {
         const fetchData = async () => {
             try {
@@ -74,8 +45,6 @@ const ItemListContainer = ({greeting}) => {
 
         fetchData()
     }, [categoryId])
-
-
 
     return (
         <ContainerModo>

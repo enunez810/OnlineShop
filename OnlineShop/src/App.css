@@ -11,6 +11,7 @@
 }
 
 .home-bannner {
+    border: 3px solid #FF4C00;
     display: flex;
     align-items: center;
     margin-top: 35px;
@@ -68,4 +69,82 @@
 .modo-claro {
     background-color: #FFF;
     color: black;
+}
+
+.div_add_cart {
+    border: 3px solid #FF4C00;
+    width: 80%;
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.div_add_cart_gretting  {
+    width: 100%;
+    text-align: center;
+    padding-top: 30px; 
+    font-size: 24px;   
+    font-weight: bolder;
+}
+
+.div_add_cart_img {
+    width: 20%;
+    padding-left: 50px; 
+}
+
+.bckcolor_left {
+    background-color: #FE9834;   
+
+}
+
+.bckcolor_right {
+    background-color: #FF6600;   
+
+}
+
+.div_add_cart_data {
+    color:white;
+    font-size: 24px;
+    font-weight: bolder;
+    width: 80%;
+    padding-left: 50px; 
+    padding-top: 10px; 
+}
+
+.div_cart_img {
+    width: 20%;
+    padding-left: 150px !important;  
+}
+
+.div_cart_data {
+    color:blue;
+    font-size: 16px;
+    font-weight: bolder;
+    width: 80%;
+    padding-left: 50px; 
+    padding-top: 10px; 
+}
+
+.div_container_flex {
+    display: flex !important;
+}
+
+.top-padding100 {
+    padding-top:100px;
+    width: 100%;
+}
+
+.w-40 {
+    width: 40% !important;
+    margin-top: 40px;
+    padding-top: 40px;
+
+
+}
+
+.w-40 label {
+    width: 100%;
+    text-align: left;
+    font-weight: bold;
+    margin-top: 20px;
 }

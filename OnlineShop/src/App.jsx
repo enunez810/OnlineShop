@@ -5,21 +5,31 @@ import { BrowserRouter, Routes, Route  } from 'react-router-dom'
 import Home from './components/Home'
 import Catalogo from './components/Catalogo'
 import Navbar from './components/Navbar'
+import ErrorNotFound from './components/ErrorNotFound'
 import ItemDetailContainer from './components/ItemDetailContainer'
+import Cart from './components/Cart'
+import Checkout from './components/Checkout'
 import { ThemeProvider } from './contexts/ThemeContext'
+import { CartProvider } from './contexts/CartContext'
 
 function App() {
   return (
     <>
       <BrowserRouter>
-        <ThemeProvider>
+      <ThemeProvider>
+      <CartProvider>
           <Navbar />
           <Routes>
               <Route path="/" element={ <Catalogo /> } />
               <Route path="/catalogo" element={ <Catalogo /> } />
               <Route path="/category/:categoryId" element={ <Catalogo /> } />
               <Route path="/item/:funkoid/:funkoname" element={ <ItemDetailContainer /> } />
+              <Route path="/NotFound" element={ <ErrorNotFound /> } />
+              <Route path="/cart" element={ <Cart /> } />
+              <Route path="/cart/:funkoid/:funkoname/:funkocant/:funkoimg" element={ <Cart /> } />
+              <Route path="/checkout" element={ <Checkout /> } />
           </Routes>
+        </CartProvider>
         </ThemeProvider>
       </BrowserRouter>
     </>

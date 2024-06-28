@@ -10,8 +10,6 @@ const ContainerModo = ({ children }) => {
                 children
             }
         </div>
-
     )
 }
-
 export default ContainerModo;

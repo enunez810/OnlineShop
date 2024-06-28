@@ -8,6 +8,10 @@
     transform: scale(1.1); 
 }
 
+.img-producto-small {
+    height: 100px;
+}
+
 
 .label-top {
     position: absolute;
