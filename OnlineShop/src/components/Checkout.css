@@ -3,3 +3,8 @@
     font-size: 30px;
     font-weight: bolder;
 }
+
+.btn-margin-bot{
+    margin-top: 30px !important;
+    margin-bottom: 30px !important;
+}

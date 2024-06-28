@@ -71,17 +71,12 @@ const ItemDetailContainer = () => {
 
     
     const insertarCarrito = () => {
-        //console.log('Item:', funkoid);
-        //console.log('Funko:', funkoname);
-        //console.log('Cantidad seleccionada:', cantidadSeleccionada);
-
         // Para Pasar el nombre de la Imagen como parametro 
         const parts = funko.image.split('/');
         const imageName = parts[parts.length - 1];
         
         navigate(`/cart/${funkoid}/${funkoname}/${cantidadSeleccionada}/${imageName}`);
     }
-
 
     return (
         <ContainerModo>
