@@ -14,3 +14,29 @@ Tambien se usaron unas librerias de estilos como:
 
 Me quedan alguno desafíos que quiero hacer, como integrar una app de Login para el Sitio  asi poder hacer un par de Features como la lista de deseados y el listado de mis Pedidos, ademas de la correccion de algunos pequeños bugs que me quedan.  
 
+En la usabilidad de la App: hay un modo oscuro y modo claro que funciona en el Home, en las Categorias y en el detalle, falta aun implementarlas en otros componentes secciones. 
+
+Graba los Items en un contexto del Carrito y tambien en el LocalStorage.  si estando en el carrito se pulsa F5 no se pierden los datos ls lee del Localstorage y lo *Regenera* en el contexto.  Aun falta implementarlo en otros componentes. 
+
+El enrutamiento se hizo con la libreria *react-router-dom* de la Siguiente manera: 
+~~~~
+      <BrowserRouter>
+      <ThemeProvider>
+      <CartProvider>
+          <Navbar />
+          <Routes>
+              <Route path="/" element={ <Catalogo /> } />
+              <Route path="/catalogo" element={ <Catalogo /> } />
+              <Route path="/category/:categoryId" element={ <Catalogo /> } />
+              <Route path="/item/:funkoid/:funkoname" element={ <ItemDetailContainer /> } />
+              <Route path="/NotFound" element={ <ErrorNotFound /> } />
+              <Route path="/cart" element={ <Cart /> } />
+              <Route path="/cart/:funkoid/:funkoname/:funkocant/:funkoimg" element={ <Cart /> } />
+              <Route path="/checkout" element={ <Checkout /> } />
+          </Routes>
+        </CartProvider>
+        </ThemeProvider>
+      </BrowserRouter>
+~~~~
+
+
