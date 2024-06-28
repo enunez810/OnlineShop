@@ -1,7 +1,8 @@
 # Tienda Online -> Funko Store 
-Ejemplo de Tienda online para el curso de ReactJs comisión 66465  
+Ejemplo de Tienda online para el curso de ReactJs comisión 66465, tienda online para la comercializacion de Funkos Pops    
 
-PreEntrega1: 
-Los estilos del Bootstrap los tiene el mensaje de bienvenida y el Numero HardCode del carrito. 
+**info**: La Rama de la PreEntrega es la Master 
 
-La Rama de la PreEntrega es la Master 
+En este proyecto se utilio la tecnologia **React + Vite**  , usando tambien bases de datos **Firebase**  
+
+Se utilizaron 
